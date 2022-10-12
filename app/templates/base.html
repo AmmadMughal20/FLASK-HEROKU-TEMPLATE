@@ -4,6 +4,19 @@
     {% if title %} {{title}} - V0.1 {% else %} Welcome to My site
 {% endblock %}
 
-{% block navbar %}
+{% block styles %}
+    <!-- Add links to custom css files-->
+    <!-- <link rel="stylesheet" href="{{url_for('.static', filename='mystyle.css')}}"> -->
+{% endblock %}
 
+{% block navbar %}
+    <!-- Add navigation bar code -->
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block scripts %}
+    <!-- Add links to custom script files -->
+    <!-- <script src="{{url_for('.static', filename='myscripts.js')}}"></script> {{super()}} -->
 {% endblock %}
